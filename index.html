@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="lado">
+                <input type="text" placeholder="Cliente" class="caja" id="cliente">
+                <select name="combo" id="doc" class="caja">
+                    <option value="0">Seleccionar Doc</option>
+                    <option value="FACTURA">FACTURA</option>
+                    <option value="BOLETA">BOLETA</option>
+                </select>
+                <input type="text" placeholder="Cantidad" class="caja" id="cant">
+            </div>
+            <div class="lado">
+                <select name=producto" id="prod" class="caja">
+                    <option value="0">Seleccionar Producto</option>
+                    <option value="ACEITE">ACEITE</option>
+                    <option value="LECHE">LECHE</option>
+                </select>
+                <input type="text" placeholder="Precio" class="caja" id="precio">
+                <button class="boton" onclick="guardar()">Registrar</button>
+            </div>
+        </div>
+        <div class="datos">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>CLIENTE</th>
+                        <th>DOCUMENTO</th>
+                        <th>PRODUCTO</th>
+                        <th>PRECIO</th>
+                        <th>CANTIDAD</th>
+                        <th>ACCION</th>
+                    </tr>
+                </thead >
+                <tbody id="tbd"> 
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
